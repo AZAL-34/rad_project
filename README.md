@@ -1,4 +1,4 @@
-Project Leader + UI/UX: Azalea Davies
-Backend: William Fairweather
-Frontend: Alex Dima
-Testing: Raven Kirkham
+Project Leader + UI/UX: Azalea Davies<br>
+Backend: William Fairweather<br>
+Frontend: Alex Dima<br>
+Testing: Raven Kirkham<br>
