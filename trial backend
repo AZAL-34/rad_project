@@ -1,6 +1,3 @@
-/******************************************************
- * Code Snippet Manager – Single-File Node.js Backend
- ******************************************************/
 const express = require("express");
 const session = require("express-session");
 const bcrypt = require("bcryptjs");
