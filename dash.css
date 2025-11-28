@@ -1,0 +1,131 @@
+/* 
+/* Add a black background color to the top navigation bar */
+/* .topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+  } */
+  
+  /* Style the links inside the navigation bar */
+  /* .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+  
+  /* Change the color of links on hover */
+  /* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  } */
+  
+  /* Style the "active" element to highlight the current page */
+  /* .topnav a.active {
+    background-color: #2196F3;
+    color: white;
+  } */
+  
+  /* Style the search box inside the navigation bar */
+  /* .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  } */
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  /* @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;
+    }
+  } */ 
+
+/* ACTUAL CSS */
+
+body{
+    background-color: #e6e6e6;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 25px;
+    
+}
+
+#nav {
+    width: 100%;
+    height: 70px;
+    padding: 0 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 14px;
+}
+
+#nav img {
+    height: 55px;
+    cursor: pointer;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#nav ul li:hover {
+    color: #4a90e2;
+    transform: translateY(-2px);
+}
+
+/* Style the search input inside the li */
+#nav ul li input {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.2s;
+    border-radius: 14px;
+}
+
+#nav ul li input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px rgba(74,144,226,0.4);
+}
+
+/* DASH BOARD */
+
+.two-class{
+    background-color: #fff;
+    float: left;
+    text-align: center;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+}
