@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippet Preview</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div id="nav" class="nav-class">
+        <img src="../Images/SNIPPY-removebg-preview.png" alt="logo" onclick="goBack()">
+        <ul>
+            <li onclick="goBack()">Back to Dashboard</li>
+        </ul>
+    </div>
+
+    <div id="previewContainer" style="max-width:800px;margin:40px auto;padding:20px;background:#fff;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+        <h2 id="snippetTitle"></h2>
+        <p id="snippetLang" style="color:#888;margin-bottom:20px;"></p>
+        <pre id="snippetCode" style="font-size:16px;"></pre>
+    </div>
+
+    <script>
+        const snippet = JSON.parse(localStorage.getItem("previewSnippet"));
+        if(snippet){
+            document.getElementById("snippetTitle").textContent = snippet.title;
+            document.getElementById("snippetLang").textContent = snippet.language;
+            document.getElementById("snippetCode").textContent = snippet.code;
+        }
+
+        function goBack(){
+            window.location.href = "dashboard.html";
+        }
+    </script>
+</body>
+</html>
